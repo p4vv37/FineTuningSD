@@ -2,7 +2,7 @@
 Playing with fine tuning SD.
 Object photo example:
 
-![example](train_data/img/40_hou toy/20_hud toy/20230524_101535.jpg)
+![example](train_squab/20230524_101158.jpg)
 
 Examples of source data:
 
