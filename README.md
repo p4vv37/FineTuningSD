@@ -15,4 +15,7 @@ The network generates great images, but model is not able to generate new conten
 LR: 5e-5, train steps: 19600 time: 12h 12 min <br />
 prompt: "A photo of an sks toy flying in space, on orbit, professional, highly detailed, national geographic"<br />
 Skipping the training of text encoder and loading only u-net makes it possible to generate some fun results. They are way less correct and more deformed. Maybe this is due to abstract nature of the toy, next step is to test it with something less... unusual.
-<br /> Results:<br /> ![example](examples/dreambooth_lora/gen_no_txt1.png)![example](examples/dreambooth_lora/gen_no_txt2.png)![example](examples/dreambooth_lora/gengen_no_txt3.png)![example](examples/dreambooth_lora/gengen_no_txt4.png)
+<br /> Results:<br /> ![example](examples/dreambooth_lora/gen_no_txt1.png)
+![example](examples/dreambooth_lora/gen_no_txt2.png)
+![example](examples/dreambooth_lora/gen_no_txt3.png)
+![example](examples/dreambooth_lora/gen_no_txt4.png)
