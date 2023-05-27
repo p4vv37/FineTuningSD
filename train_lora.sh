@@ -10,17 +10,15 @@ python train_dreambooth_lora.py \
   --output_dir=$OUTPUT_DIR \
   --instance_prompt="a photo of sks toy" \
   --class_prompt="a photo of toy" \
-  --train_text_encoder \
   --resolution=512 \
   --train_batch_size=1 \
   --gradient_accumulation_steps=4 \
-  --checkpointing_steps=100 \
-  --learning_rate=1e-4 \
+  --checkpointing_steps=200 \
+  --learning_rate=5e-5 \
   --report_to="wandb" \
   --lr_scheduler="constant" \
   --lr_warmup_steps=0 \
-  --max_train_steps=15000 \
+  --max_train_steps=30000 \
   --validation_prompt="A photo of sks toy on a table" \
-  --validation_epochs=20 \
-  --seed="0"
-
+  --validation_epochs=40 \
+  --seed="0" \
