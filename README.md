@@ -19,3 +19,10 @@ Skipping the training of text encoder and loading only u-net makes it possible t
 ![example](examples/dreambooth_lora/gen_no_txt2.png)
 ![example](examples/dreambooth_lora/gen_no_txt3.png)
 ![example](examples/dreambooth_lora/gen_no_txt4.png)
+
+3) Tried to teach something less weird: WV Polo. It's not perfect still.. Time to try something else. The prompt is still ignored if network was loaded with load_lora_weights<br />
+LR: 1e-4, train steps: 19600 time: 12h 12 min <br />
+prompt: "A photo of sks car on a race track"<br />
+<br /> Results:<br /> ![example](examples/dreambooth_lora/gen_polo.png)
+![example](examples/dreambooth_lora/gen_polo2.png)
+![example](examples/dreambooth_lora/gen_polo3.png)

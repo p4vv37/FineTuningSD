@@ -3,17 +3,18 @@ from huggingface_hub.repocard import RepoCard
 from diffusers import StableDiffusionPipeline, DiffusionPipeline
 import torch
 
-lora_model_id = "out_model_lora/checkpoint-19600"
+lora_model_id = "out_model_lora_polo_txt"
 
 pipe = StableDiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5", torch_dtype=torch.float16,
                                                safety_checker=None)
 pipe = pipe.to("cuda")
-pipe.unet.load_attn_procs(lora_model_id)
+# pipe.unet.load_attn_procs(lora_model_id)
+pipe.load_lora_weights(lora_model_id)
 
-images = pipe("A photo of an sks toy flying in space, on orbit, professional, highly detailed, national geographic",
+images = pipe("A photo of sks car on a race track",
               num_inference_steps=60,
-              negative_prompt="wood, table, fish, blue surface, blue sponge, blue carpet",
-              cross_attention_kwargs={"scale": 0.8},
+              negative_prompt="",
+              #cross_attention_kwargs={"scale": 1.0},
               num_images_per_prompt=4
               ).images
 for num, image in enumerate(images):
