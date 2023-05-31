@@ -26,3 +26,10 @@ prompt: "A photo of sks car on a race track"<br />
 <br /> Results:<br /> ![example](examples/dreambooth_lora/gen_polo.png)
 ![example](examples/dreambooth_lora/gen_polo2.png)
 ![example](examples/dreambooth_lora/gen_polo3.png)
+4) 
+3) TSD-Scripts Dreambooth: way better results on WV<br />
+LR: 1e-7, train steps: 2000 time: ~45 min <br />
+<br /> Results:<br /> ![example](examples/dreambooth-sd-scripts/1.jpeg)
+![example](examples/dreambooth-sd-scripts/2.png)
+![example](examples/dreambooth-sd-scripts/3.png)
+![example](examples/dreambooth-sd-scripts/4.jpeg)
