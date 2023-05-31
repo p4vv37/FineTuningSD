@@ -33,3 +33,10 @@ LR: 1e-7, train steps: 2000 time: ~45 min <br />
 ![example](examples/dreambooth-sd-scripts/2.png)
 ![example](examples/dreambooth-sd-scripts/3.png)
 ![example](examples/dreambooth-sd-scripts/4.jpeg)
+
+### How to train Dreambooth with SD-Scripts:
+
+- Create toml file - see templates/db_toml_template.toml
+- Create .sh file - see templates/dreambooth.sh
+- Create captions for training and reg images - tag_images_by_wd14_tagger.py in sd-scripts: python tag_images_by_wd14_tagger.py --caption_extention=.caption --batch_size=4 /data/dir
+- Run the .sh file
