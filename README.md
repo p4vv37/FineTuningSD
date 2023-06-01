@@ -26,8 +26,7 @@ prompt: "A photo of sks car on a race track"<br />
 <br /> Results:<br /> ![example](examples/dreambooth_lora/gen_polo.png)
 ![example](examples/dreambooth_lora/gen_polo2.png)
 ![example](examples/dreambooth_lora/gen_polo3.png)
-4) 
-3) TSD-Scripts Dreambooth: way better results on WV<br />
+4) SD-Scripts Dreambooth: way better results on WV<br />
 LR: 1e-7, train steps: 2000 time: ~45 min <br />
 <br /> Results:<br /> ![example](examples/dreambooth-sd-scripts/1.jpeg)
 ![example](examples/dreambooth-sd-scripts/2.png)
@@ -39,4 +38,8 @@ LR: 1e-7, train steps: 2000 time: ~45 min <br />
 - Create toml file - see templates/db_toml_template.toml
 - Create .sh file - see templates/dreambooth.sh
 - Create captions for training and reg images - tag_images_by_wd14_tagger.py in sd-scripts: python tag_images_by_wd14_tagger.py --caption_extention=.caption --batch_size=4 /data/dir
+- Add text with code and class to begining of each caption: sed -i '1s/^/An shs toy /' *.caption
 - Run the .sh file
+
+5) SD-Scripts Dreambooth on Squab toy: Learns to create toy "in style of" squab fast, but then overfits on enviro. I'll try with more varied images.<br />
+<br /> Results:<br /> ![example](examples/dreambooth-sd-scripts/squab0.png)![example](examples/dreambooth-sd-scripts/squab5000.png)
