@@ -43,5 +43,7 @@ LR: 1e-7, train steps: 2000 time: ~45 min <br />
 
 5) SD-Scripts Dreambooth on Squab toy: Learns to create toy "in style of" squab fast, but then overfits on enviro. I'll try with more varied images.<br />
 <br /> Results:<br /> ![example](examples/dreambooth-sd-scripts/squab0.png)![example](examples/dreambooth-sd-scripts/squab5000.png)
-6) SD-Scripts LoRa on Polo toy: Can create very varied versions, nice results, small models. Need to test it more, but probably the best one so far.<br />
+6) SD-Scripts LoRa on Polo G40: Can create very varied versions, nice results, small models. Need to test it more, but probably the best one so far.<br />
 <br /> Results:<br /> ![example](examples/lora/1.png)![example](examples/lora/2.png)
+7) SD-Scripts Textual Inversion on Polo and squabtoy: It did not do a good job. It did learn that Polo is a car and Squab is a toy, that's all...<br />
+<br /> Results:<br /> ![example](examples/ti/1.png)![example](examples/ti/2.png)![example](examples/ti/3.png)![example](examples/ti/4.png)

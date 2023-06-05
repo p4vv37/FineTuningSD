@@ -1,0 +1,26 @@
+[general]
+shuffle_caption = true
+keep_tokens = 1
+
+[[datasets]]
+resolution = 512                                    # Training resolution
+batch_size = 1                                      # Batch size
+
+[[datasets.subsets]]
+image_dir = '/home/pawel/git/FineTuningSD/train_squab'                     # Specify the folder containing the training images
+caption_extension = '.caption'            # Caption file extension; change this if using .txt
+num_repeats = 10                          # Number of repetitions for training images
+
+[[datasets.subsets]]
+image_dir = '/home/pawel/git/FineTuningSD/train_toys'                     # Specify the folder containing the training images
+caption_extension = '.caption'            # Caption file extension; change this if using .txt
+num_repeats = 10                          # Number of repetitions for training images
+
+# Write the following only when using regularization images. Remove it if not using them.
+[[datasets.subsets]]
+is_reg = true
+image_dir = '/home/pawel/git/FineTuningSD/reg_squab'                      # Specify the folder containing the regularization images
+class_tokens = 'toy'                     # Specify the class
+caption_extension = '.caption'            # Caption file extension; change this if using .txt
+num_repeats = 1                           # Number of repetitions for regularization images; 1 is usually sufficient
+
